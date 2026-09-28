@@ -1,0 +1,3589 @@
+{
+  "metadata": {
+    "title": "Zomato Restaurant Analysis",
+    "subtitle": "Restaurant Analytics & Business Intelligence Dashboard",
+    "description": "An exploratory data analysis project focused on restaurant ratings, pricing, cuisines, locations, delivery services, customer engagement, and business insights.",
+    "total_restaurants": 9551,
+    "total_columns": 21,
+    "missing_cuisines": 9,
+    "duplicate_rows": 0,
+    "rated_count": 7403,
+    "not_rated_count": 2148,
+    "not_rated_percentage": 22.49,
+    "avg_rating_rated": 3.44,
+    "avg_rating_all": 2.67,
+    "total_votes": 1498645,
+    "avg_votes": 156.9,
+    "online_delivery_pct": 25.7,
+    "online_delivery_count": 2451,
+    "table_booking_pct": 12.1,
+    "table_booking_count": 1158,
+    "top_city": "New Delhi",
+    "top_city_count": 5473,
+    "top_3_cities_concentration": 80.3,
+    "rating_skewness": -0.954,
+    "votes_rating_corr": 0.409,
+    "cost_rating_corr": 0.052,
+    "price_rating_corr": 0.438
+  },
+  "rating_distribution": [
+    {
+      "category": "Excellent",
+      "count": 301,
+      "percentage": 3.15,
+      "color": "#16a34a"
+    },
+    {
+      "category": "Very Good",
+      "count": 1079,
+      "percentage": 11.3,
+      "color": "#22c55e"
+    },
+    {
+      "category": "Good",
+      "count": 2100,
+      "percentage": 21.99,
+      "color": "#84cc16"
+    },
+    {
+      "category": "Average",
+      "count": 3737,
+      "percentage": 39.13,
+      "color": "#eab308"
+    },
+    {
+      "category": "Poor",
+      "count": 186,
+      "percentage": 1.95,
+      "color": "#ea580c"
+    },
+    {
+      "category": "Not rated",
+      "count": 2148,
+      "percentage": 22.49,
+      "color": "#94a3b8"
+    }
+  ],
+  "top_cities": [
+    {
+      "city": "New Delhi",
+      "count": 5473,
+      "percentage": 57.3,
+      "avg_rating_all": 2.44,
+      "avg_rating_rated": 3.3,
+      "delivery_pct": 27.2,
+      "booking_pct": 13.1,
+      "total_votes": 628340
+    },
+    {
+      "city": "Gurgaon",
+      "count": 1118,
+      "percentage": 11.71,
+      "avg_rating_all": 2.65,
+      "avg_rating_rated": 3.33,
+      "delivery_pct": 38.0,
+      "booking_pct": 18.2,
+      "total_votes": 132160
+    },
+    {
+      "city": "Noida",
+      "count": 1080,
+      "percentage": 11.31,
+      "avg_rating_all": 2.04,
+      "avg_rating_rated": 3.16,
+      "delivery_pct": 33.7,
+      "booking_pct": 10.4,
+      "total_votes": 73488
+    },
+    {
+      "city": "Faridabad",
+      "count": 251,
+      "percentage": 2.63,
+      "avg_rating_all": 1.87,
+      "avg_rating_rated": 3.1,
+      "delivery_pct": 13.9,
+      "booking_pct": 6.0,
+      "total_votes": 6486
+    },
+    {
+      "city": "Ghaziabad",
+      "count": 25,
+      "percentage": 0.26,
+      "avg_rating_all": 2.85,
+      "avg_rating_rated": 3.1,
+      "delivery_pct": 40.0,
+      "booking_pct": 12.0,
+      "total_votes": 2366
+    },
+    {
+      "city": "Bhubaneshwar",
+      "count": 21,
+      "percentage": 0.22,
+      "avg_rating_all": 3.98,
+      "avg_rating_rated": 3.98,
+      "delivery_pct": 0.0,
+      "booking_pct": 0.0,
+      "total_votes": 4243
+    },
+    {
+      "city": "Amritsar",
+      "count": 21,
+      "percentage": 0.22,
+      "avg_rating_all": 3.69,
+      "avg_rating_rated": 3.69,
+      "delivery_pct": 0.0,
+      "booking_pct": 0.0,
+      "total_votes": 3665
+    },
+    {
+      "city": "Ahmedabad",
+      "count": 21,
+      "percentage": 0.22,
+      "avg_rating_all": 4.16,
+      "avg_rating_rated": 4.16,
+      "delivery_pct": 52.4,
+      "booking_pct": 0.0,
+      "total_votes": 12266
+    },
+    {
+      "city": "Lucknow",
+      "count": 21,
+      "percentage": 0.22,
+      "avg_rating_all": 4.2,
+      "avg_rating_rated": 4.2,
+      "delivery_pct": 0.0,
+      "booking_pct": 0.0,
+      "total_votes": 9130
+    },
+    {
+      "city": "Guwahati",
+      "count": 21,
+      "percentage": 0.22,
+      "avg_rating_all": 4.19,
+      "avg_rating_rated": 4.19,
+      "delivery_pct": 0.0,
+      "booking_pct": 0.0,
+      "total_votes": 4964
+    }
+  ],
+  "price_range_analysis": [
+    {
+      "price_range": 1,
+      "label": "Price Range 1 (Cheap)",
+      "short_label": "Range 1",
+      "count": 4444,
+      "percentage": 46.5,
+      "avg_rating_all": 2.0,
+      "avg_rating_rated": 3.24,
+      "avg_cost_for_two": 275.2,
+      "delivery_pct": 15.8,
+      "booking_pct": 0.0
+    },
+    {
+      "price_range": 2,
+      "label": "Price Range 2 (Moderate)",
+      "short_label": "Range 2",
+      "count": 3113,
+      "percentage": 32.6,
+      "avg_rating_all": 2.94,
+      "avg_rating_rated": 3.38,
+      "avg_cost_for_two": 596.8,
+      "delivery_pct": 41.3,
+      "booking_pct": 7.7
+    },
+    {
+      "price_range": 3,
+      "label": "Price Range 3 (Expensive)",
+      "short_label": "Range 3",
+      "count": 1408,
+      "percentage": 14.7,
+      "avg_rating_all": 3.68,
+      "avg_rating_rated": 3.78,
+      "avg_cost_for_two": 5177.3,
+      "delivery_pct": 29.2,
+      "booking_pct": 45.7
+    },
+    {
+      "price_range": 4,
+      "label": "Price Range 4 (Fine Dining)",
+      "short_label": "Range 4",
+      "count": 586,
+      "percentage": 6.1,
+      "avg_rating_all": 3.82,
+      "avg_rating_rated": 3.89,
+      "avg_cost_for_two": 1848.5,
+      "delivery_pct": 9.0,
+      "booking_pct": 46.8
+    }
+  ],
+  "delivery_comparison": {
+    "yes": {
+      "count": 2451,
+      "percentage": 25.7,
+      "avg_rating_all": 3.25,
+      "avg_rating_rated": 3.38,
+      "avg_votes": 211.3
+    },
+    "no": {
+      "count": 7100,
+      "percentage": 74.3,
+      "avg_rating_all": 2.47,
+      "avg_rating_rated": 3.47,
+      "avg_votes": 138.1
+    }
+  },
+  "table_booking_comparison": {
+    "yes": {
+      "count": 1158,
+      "percentage": 12.1,
+      "avg_rating_all": 3.44,
+      "avg_rating_rated": 3.59,
+      "avg_votes": 353.1
+    },
+    "no": {
+      "count": 8393,
+      "percentage": 87.9,
+      "avg_rating_all": 2.56,
+      "avg_rating_rated": 3.41,
+      "avg_votes": 129.8
+    }
+  },
+  "cuisines": {
+    "top_by_rating": [
+      {
+        "cuisine": "Italian",
+        "avg_rating": 3.95,
+        "count": 50
+      },
+      {
+        "cuisine": "American",
+        "avg_rating": 3.92,
+        "count": 29
+      },
+      {
+        "cuisine": "Mexican",
+        "avg_rating": 3.85,
+        "count": 34
+      },
+      {
+        "cuisine": "Italian, Pizza",
+        "avg_rating": 3.8,
+        "count": 23
+      },
+      {
+        "cuisine": "Continental",
+        "avg_rating": 3.75,
+        "count": 20
+      },
+      {
+        "cuisine": "Desserts",
+        "avg_rating": 3.6,
+        "count": 40
+      },
+      {
+        "cuisine": "Desserts, Ice Cream",
+        "avg_rating": 3.57,
+        "count": 24
+      },
+      {
+        "cuisine": "Chinese, Thai",
+        "avg_rating": 3.52,
+        "count": 48
+      },
+      {
+        "cuisine": "North Indian, Continental",
+        "avg_rating": 3.52,
+        "count": 26
+      },
+      {
+        "cuisine": "Burger, Fast Food",
+        "avg_rating": 3.49,
+        "count": 39
+      }
+    ],
+    "top_by_volume": [
+      {
+        "cuisine": "North Indian",
+        "count": 492,
+        "avg_rating": 3.18
+      },
+      {
+        "cuisine": "North Indian, Chinese",
+        "count": 397,
+        "avg_rating": 3.12
+      },
+      {
+        "cuisine": "North Indian, Mughlai",
+        "count": 294,
+        "avg_rating": 3.28
+      },
+      {
+        "cuisine": "Cafe",
+        "count": 252,
+        "avg_rating": 3.43
+      },
+      {
+        "cuisine": "Fast Food",
+        "count": 228,
+        "avg_rating": 3.29
+      },
+      {
+        "cuisine": "Chinese",
+        "count": 224,
+        "avg_rating": 3.23
+      },
+      {
+        "cuisine": "North Indian, Mughlai, Chinese",
+        "count": 164,
+        "avg_rating": 3.09
+      },
+      {
+        "cuisine": "Bakery",
+        "count": 130,
+        "avg_rating": 3.23
+      },
+      {
+        "cuisine": "Bakery, Desserts",
+        "count": 116,
+        "avg_rating": 3.4
+      },
+      {
+        "cuisine": "Pizza, Fast Food",
+        "count": 113,
+        "avg_rating": 3.05
+      }
+    ]
+  },
+  "engagement": {
+    "correlation": 0.409,
+    "scatter_sample": [
+      {
+        "name": "Amit Hotel",
+        "rating": 2.9,
+        "votes": 7,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Movenpick",
+        "rating": 3.9,
+        "votes": 27,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Angrezee Dhaba",
+        "rating": 2.8,
+        "votes": 7,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Sagar Ratna",
+        "rating": 2.3,
+        "votes": 131,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Fishpatrick's Crabby Cafe",
+        "rating": 3.2,
+        "votes": 16,
+        "price_range": 2,
+        "city": "Winchester Bay"
+      },
+      {
+        "name": "Meghraj Food Court",
+        "rating": 3.0,
+        "votes": 24,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hot Spot",
+        "rating": 3.8,
+        "votes": 201,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pradhan Ji Multi Cuisine Restaurant",
+        "rating": 3.3,
+        "votes": 41,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "United Punjab",
+        "rating": 2.5,
+        "votes": 88,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Burnt Toast Cafe",
+        "rating": 3.4,
+        "votes": 33,
+        "price_range": 1,
+        "city": "Dubuque"
+      },
+      {
+        "name": "Pizza Hut Delivery",
+        "rating": 3.2,
+        "votes": 51,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Tashan",
+        "rating": 4.6,
+        "votes": 304,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Kitchen of Awadh",
+        "rating": 3.4,
+        "votes": 64,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bunty Dhaba",
+        "rating": 2.8,
+        "votes": 8,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Kabir Kitchen",
+        "rating": 3.8,
+        "votes": 130,
+        "price_range": 2,
+        "city": "Vadodara"
+      },
+      {
+        "name": "Chicken Khurana",
+        "rating": 2.7,
+        "votes": 128,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Chawla Di Hutti",
+        "rating": 3.1,
+        "votes": 59,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "MyLoveBiryani.Com",
+        "rating": 3.2,
+        "votes": 16,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "The Manhattan FISH MARKET",
+        "rating": 4.0,
+        "votes": 180,
+        "price_range": 4,
+        "city": "Doha"
+      },
+      {
+        "name": "Sahib\u00e4\u00f3\u00bbs Barbeque by Ohri\u00e4\u00f3\u00bbs",
+        "rating": 4.1,
+        "votes": 571,
+        "price_range": 3,
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Grand Madras Cafe",
+        "rating": 2.9,
+        "votes": 4,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bamboo Hut",
+        "rating": 3.4,
+        "votes": 15,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Court Avenue Brewing Company",
+        "rating": 4.2,
+        "votes": 370,
+        "price_range": 3,
+        "city": "Des Moines"
+      },
+      {
+        "name": "Sagar Ratna",
+        "rating": 2.4,
+        "votes": 76,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Cafe Coffee Day",
+        "rating": 3.5,
+        "votes": 50,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Kathis",
+        "rating": 2.4,
+        "votes": 109,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Mumbai Central Street Food",
+        "rating": 3.1,
+        "votes": 7,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Republic of Chicken",
+        "rating": 2.7,
+        "votes": 29,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Datz",
+        "rating": 4.7,
+        "votes": 3074,
+        "price_range": 3,
+        "city": "Tampa Bay"
+      },
+      {
+        "name": "Akash Deep",
+        "rating": 2.8,
+        "votes": 28,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Moti Mahal Delux Tandoori Trail",
+        "rating": 3.2,
+        "votes": 151,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Corner Sweets",
+        "rating": 3.2,
+        "votes": 100,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Monosoz",
+        "rating": 3.7,
+        "votes": 66,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pink Box",
+        "rating": 3.8,
+        "votes": 243,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Drinks At Stake - Bar Exchange",
+        "rating": 3.8,
+        "votes": 96,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "rating": 2.9,
+        "votes": 44,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Cake Shop - The Ashok",
+        "rating": 3.1,
+        "votes": 26,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Chhabra Sweets",
+        "rating": 2.4,
+        "votes": 15,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Vanshika Indian, Chinese, & Parantha Corner",
+        "rating": 3.1,
+        "votes": 29,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Snack Shack",
+        "rating": 2.7,
+        "votes": 15,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "The Piano Man Jazz Club",
+        "rating": 4.2,
+        "votes": 420,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hunter's Kitchen",
+        "rating": 3.0,
+        "votes": 6,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Mithlesh Ande Wala",
+        "rating": 3.5,
+        "votes": 17,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bon Bon Pastry Shop",
+        "rating": 3.1,
+        "votes": 213,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Kake Di Hatti",
+        "rating": 3.6,
+        "votes": 314,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Tantra Asian Bistro",
+        "rating": 4.9,
+        "votes": 474,
+        "price_range": 2,
+        "city": "Davenport"
+      },
+      {
+        "name": "Jim Shaw's Seafood Grill & Bar",
+        "rating": 4.6,
+        "votes": 467,
+        "price_range": 2,
+        "city": "Macon"
+      },
+      {
+        "name": "Souza Lobo",
+        "rating": 4.3,
+        "votes": 918,
+        "price_range": 4,
+        "city": "Goa"
+      },
+      {
+        "name": "Charu Nanda's Home Baked Cakes",
+        "rating": 3.1,
+        "votes": 7,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Blos Cafe",
+        "rating": 3.9,
+        "votes": 150,
+        "price_range": 4,
+        "city": "Pretoria"
+      },
+      {
+        "name": "Almost Famous Burgers",
+        "rating": 4.0,
+        "votes": 86,
+        "price_range": 3,
+        "city": "Manchester"
+      },
+      {
+        "name": "True Blue",
+        "rating": 3.2,
+        "votes": 31,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Anandum",
+        "rating": 3.2,
+        "votes": 13,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Gurgaon Hights",
+        "rating": 2.5,
+        "votes": 19,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Barista",
+        "rating": 3.4,
+        "votes": 39,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Royal Empire Meat Shop",
+        "rating": 3.4,
+        "votes": 29,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Biryani Blues",
+        "rating": 3.5,
+        "votes": 18,
+        "price_range": 3,
+        "city": "Noida"
+      },
+      {
+        "name": "The Coffee Bean & Tea Leaf",
+        "rating": 2.6,
+        "votes": 55,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Pukhtaan-The Royal Taste of India",
+        "rating": 3.5,
+        "votes": 32,
+        "price_range": 4,
+        "city": "Patna"
+      },
+      {
+        "name": "Exotic India",
+        "rating": 4.1,
+        "votes": 160,
+        "price_range": 2,
+        "city": "Cedar Rapids/Iowa City"
+      },
+      {
+        "name": "Evergreen Sweets Corner",
+        "rating": 3.0,
+        "votes": 8,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bats On Delivery",
+        "rating": 2.7,
+        "votes": 9,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "rating": 3.6,
+        "votes": 29,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Punjab Restaurant",
+        "rating": 3.8,
+        "votes": 83,
+        "price_range": 3,
+        "city": "Doha"
+      },
+      {
+        "name": "Hornbill",
+        "rating": 4.0,
+        "votes": 149,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Da Pizza Corner",
+        "rating": 2.5,
+        "votes": 6,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Taj of India",
+        "rating": 4.0,
+        "votes": 227,
+        "price_range": 2,
+        "city": "Augusta"
+      },
+      {
+        "name": "Romi Da Dhaba",
+        "rating": 3.2,
+        "votes": 34,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "House of Caffeine",
+        "rating": 3.3,
+        "votes": 27,
+        "price_range": 2,
+        "city": "Nagpur"
+      },
+      {
+        "name": "Chao Cart",
+        "rating": 3.3,
+        "votes": 32,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Shree Rathnam",
+        "rating": 3.5,
+        "votes": 85,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Ravi Raj Di Kulfi",
+        "rating": 3.6,
+        "votes": 99,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Jung Bahadur Kachori Wala",
+        "rating": 4.1,
+        "votes": 405,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Vintage Bakers",
+        "rating": 3.7,
+        "votes": 46,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Mr.Hunger",
+        "rating": 3.0,
+        "votes": 5,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Plumber - The Lounge",
+        "rating": 3.9,
+        "votes": 38,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Chin 10",
+        "rating": 3.5,
+        "votes": 53,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Archie's Waeside",
+        "rating": 3.7,
+        "votes": 100,
+        "price_range": 3,
+        "city": "Sioux City"
+      },
+      {
+        "name": "The Roll Hut",
+        "rating": 3.1,
+        "votes": 13,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "By The Way - Bellagio",
+        "rating": 2.9,
+        "votes": 120,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Attitude Kitchen & Bar",
+        "rating": 2.9,
+        "votes": 140,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pudding & Pie",
+        "rating": 2.7,
+        "votes": 16,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "SardarBuksh Coffee & Co.",
+        "rating": 3.6,
+        "votes": 23,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Instapizza After Hours",
+        "rating": 3.5,
+        "votes": 21,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hyderabad House",
+        "rating": 2.7,
+        "votes": 7,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Raju Halwai",
+        "rating": 3.1,
+        "votes": 7,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Chor Bizarre",
+        "rating": 4.4,
+        "votes": 64,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "KB's Kulfi & Icecream",
+        "rating": 3.3,
+        "votes": 43,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Ashu Thali Wala",
+        "rating": 3.0,
+        "votes": 11,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bawarchi",
+        "rating": 3.0,
+        "votes": 14,
+        "price_range": 2,
+        "city": "Faridabad"
+      },
+      {
+        "name": "Manzu\u00ed\u00e7",
+        "rating": 3.2,
+        "votes": 6,
+        "price_range": 4,
+        "city": "Bras\u00ed_lia"
+      },
+      {
+        "name": "Templo da Carne - Marcos Bassi",
+        "rating": 4.4,
+        "votes": 17,
+        "price_range": 4,
+        "city": "S\u00ed\u00a3o Paulo"
+      },
+      {
+        "name": "Fuji Bay Japanese Restaurant",
+        "rating": 3.7,
+        "votes": 129,
+        "price_range": 3,
+        "city": "Sioux City"
+      },
+      {
+        "name": "Choo Choo Eastside",
+        "rating": 3.9,
+        "votes": 439,
+        "price_range": 1,
+        "city": "Athens"
+      },
+      {
+        "name": "The Black Sheep Bistro",
+        "rating": 4.7,
+        "votes": 681,
+        "price_range": 4,
+        "city": "Goa"
+      },
+      {
+        "name": "Tokyo Mon Amour",
+        "rating": 3.1,
+        "votes": 10,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Liquid Lounge",
+        "rating": 3.8,
+        "votes": 290,
+        "price_range": 3,
+        "city": "Mangalore"
+      },
+      {
+        "name": "Pappu Chat Bhandar",
+        "rating": 3.5,
+        "votes": 19,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Uncle Xpress",
+        "rating": 3.4,
+        "votes": 80,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "rating": 3.1,
+        "votes": 100,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hawkers",
+        "rating": 2.7,
+        "votes": 26,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Domino's Pizza",
+        "rating": 2.6,
+        "votes": 118,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Villa Gargano",
+        "rating": 3.7,
+        "votes": 117,
+        "price_range": 1,
+        "city": "Albany"
+      },
+      {
+        "name": "Giovanni's Shrimp Truck",
+        "rating": 4.5,
+        "votes": 691,
+        "price_range": 2,
+        "city": "Rest of Hawaii"
+      },
+      {
+        "name": "Mezzaluna",
+        "rating": 3.8,
+        "votes": 249,
+        "price_range": 2,
+        "city": "Mysore"
+      },
+      {
+        "name": "Shree Balaji Chaat Bhandar",
+        "rating": 3.2,
+        "votes": 16,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Connexions Bar - Crowne Plaza",
+        "rating": 3.5,
+        "votes": 59,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Delhi Club House",
+        "rating": 3.9,
+        "votes": 81,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Green Truck Pub",
+        "rating": 4.7,
+        "votes": 906,
+        "price_range": 3,
+        "city": "Savannah"
+      },
+      {
+        "name": "Bikaner's",
+        "rating": 2.4,
+        "votes": 11,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "D ART of Flavour",
+        "rating": 2.8,
+        "votes": 13,
+        "price_range": 2,
+        "city": "Faridabad"
+      },
+      {
+        "name": "Goli Vada Pav No. 1",
+        "rating": 3.4,
+        "votes": 151,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Club Tokyo - Best Western Skycity Hotel",
+        "rating": 2.8,
+        "votes": 13,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "The Vault Cafe",
+        "rating": 3.9,
+        "votes": 3413,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Subway",
+        "rating": 2.7,
+        "votes": 114,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Chang Garden",
+        "rating": 3.5,
+        "votes": 93,
+        "price_range": 1,
+        "city": "Pocatello"
+      },
+      {
+        "name": "Cakebak",
+        "rating": 3.1,
+        "votes": 8,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Nowhere Terrace Brewpub Cafe",
+        "rating": 4.1,
+        "votes": 214,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Moti Mahal Delux - Kebab Trail",
+        "rating": 3.2,
+        "votes": 102,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pind Balluchi",
+        "rating": 3.4,
+        "votes": 1022,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Bikanervala",
+        "rating": 3.4,
+        "votes": 81,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "China Garden",
+        "rating": 3.9,
+        "votes": 496,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Faasos",
+        "rating": 2.8,
+        "votes": 13,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pirates of Grill",
+        "rating": 4.1,
+        "votes": 2806,
+        "price_range": 4,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Gaurav Pastry Palace",
+        "rating": 3.6,
+        "votes": 95,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Costa Coffee",
+        "rating": 3.0,
+        "votes": 4,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Grand Trunk Road",
+        "rating": 3.9,
+        "votes": 616,
+        "price_range": 3,
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Fattoush",
+        "rating": 2.9,
+        "votes": 5,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pizza Hut Delivery",
+        "rating": 3.6,
+        "votes": 103,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Om Sweets & Snacks",
+        "rating": 3.5,
+        "votes": 486,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Soo Yung by the backyard",
+        "rating": 3.4,
+        "votes": 84,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Samrat Bakers",
+        "rating": 2.6,
+        "votes": 16,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Anchor Bar & Kitchen",
+        "rating": 2.5,
+        "votes": 106,
+        "price_range": 3,
+        "city": "Noida"
+      },
+      {
+        "name": "Punjabi Snacks",
+        "rating": 2.9,
+        "votes": 4,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Halki Aanch",
+        "rating": 2.7,
+        "votes": 39,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Dirty Apron",
+        "rating": 4.3,
+        "votes": 96,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Skye",
+        "rating": 4.1,
+        "votes": 1498,
+        "price_range": 3,
+        "city": "Jakarta"
+      },
+      {
+        "name": "Wrapss",
+        "rating": 3.1,
+        "votes": 50,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Aggarwal Sweets India",
+        "rating": 2.8,
+        "votes": 9,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Oh! China",
+        "rating": 2.9,
+        "votes": 16,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Sameer's Restaurant",
+        "rating": 2.5,
+        "votes": 59,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Smokin' Grill by The Flashback",
+        "rating": 3.3,
+        "votes": 23,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "CAD M CAD B",
+        "rating": 3.5,
+        "votes": 60,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bikkgane Biryani",
+        "rating": 4.1,
+        "votes": 740,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Machan - The Taj Mahal Hotel",
+        "rating": 3.9,
+        "votes": 696,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "G Lounge",
+        "rating": 3.2,
+        "votes": 113,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Vintro",
+        "rating": 3.9,
+        "votes": 96,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Frosty Rollies",
+        "rating": 4.0,
+        "votes": 44,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Tandoori Tadka",
+        "rating": 3.3,
+        "votes": 17,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Spice Deli",
+        "rating": 3.3,
+        "votes": 52,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Cholkat",
+        "rating": 3.0,
+        "votes": 4,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Hanging Bat",
+        "rating": 3.5,
+        "votes": 31,
+        "price_range": 3,
+        "city": "Edinburgh"
+      },
+      {
+        "name": "Domino's Pizza",
+        "rating": 3.4,
+        "votes": 25,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "VNS Live Studio",
+        "rating": 3.5,
+        "votes": 109,
+        "price_range": 1,
+        "city": "Varanasi"
+      },
+      {
+        "name": "Elegant China X-Press",
+        "rating": 3.1,
+        "votes": 9,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hunger Strike",
+        "rating": 3.3,
+        "votes": 70,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Cafe Amaretto",
+        "rating": 4.1,
+        "votes": 147,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Burmese Kitchen Plus",
+        "rating": 3.4,
+        "votes": 65,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Spice Cube",
+        "rating": 3.5,
+        "votes": 116,
+        "price_range": 3,
+        "city": "Ludhiana"
+      },
+      {
+        "name": "J's Homestyle Cooking",
+        "rating": 3.6,
+        "votes": 69,
+        "price_range": 1,
+        "city": "Waterloo"
+      },
+      {
+        "name": "Domino's Pizza",
+        "rating": 2.9,
+        "votes": 13,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Doggy Style",
+        "rating": 3.2,
+        "votes": 33,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Shivas Cafe",
+        "rating": 3.1,
+        "votes": 14,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Being Truckers",
+        "rating": 3.8,
+        "votes": 99,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Qureshi",
+        "rating": 3.0,
+        "votes": 27,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Captain Bill$ Deliverz",
+        "rating": 2.7,
+        "votes": 185,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Hungry Inn",
+        "rating": 3.0,
+        "votes": 5,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Henri's Bar - Le Meridien",
+        "rating": 3.3,
+        "votes": 20,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Greek Village",
+        "rating": 4.0,
+        "votes": 316,
+        "price_range": 2,
+        "city": "Macon"
+      },
+      {
+        "name": "MONKS",
+        "rating": 4.2,
+        "votes": 259,
+        "price_range": 3,
+        "city": "Jakarta"
+      },
+      {
+        "name": "Not Just Dilli",
+        "rating": 3.2,
+        "votes": 15,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Domino's Pizza",
+        "rating": 3.3,
+        "votes": 82,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bebbe Da Degh",
+        "rating": 3.2,
+        "votes": 65,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Chinois",
+        "rating": 3.0,
+        "votes": 7,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Cookie Shoppe",
+        "rating": 3.4,
+        "votes": 34,
+        "price_range": 1,
+        "city": "Albany"
+      },
+      {
+        "name": "Cafe Southall",
+        "rating": 4.2,
+        "votes": 162,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Rahul Meat Corner",
+        "rating": 3.1,
+        "votes": 6,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Doughlicious",
+        "rating": 3.6,
+        "votes": 69,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Baxman Delivers",
+        "rating": 2.9,
+        "votes": 4,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Puskar Raj Momos & Chinese Corner",
+        "rating": 3.0,
+        "votes": 4,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "SGF - Spice Grill Flame",
+        "rating": 3.1,
+        "votes": 4,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Assam Tea Corner",
+        "rating": 2.8,
+        "votes": 6,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Dock Forty Five",
+        "rating": 4.2,
+        "votes": 79,
+        "price_range": 3,
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Chai Point",
+        "rating": 2.9,
+        "votes": 10,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Latitude - Mosaic Hotels",
+        "rating": 3.3,
+        "votes": 61,
+        "price_range": 3,
+        "city": "Noida"
+      },
+      {
+        "name": "Italiano",
+        "rating": 3.6,
+        "votes": 625,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Dilli Chaap Wale",
+        "rating": 3.4,
+        "votes": 24,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Ziu",
+        "rating": 4.1,
+        "votes": 259,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Qureshi's Kabab Corner",
+        "rating": 3.3,
+        "votes": 96,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Hype",
+        "rating": 3.7,
+        "votes": 142,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Nazeer Delicacies",
+        "rating": 3.3,
+        "votes": 163,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Prego - The Westin Gurgaon",
+        "rating": 3.8,
+        "votes": 390,
+        "price_range": 4,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Chowringhee",
+        "rating": 3.6,
+        "votes": 108,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Subway",
+        "rating": 3.4,
+        "votes": 93,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Soni Bakers",
+        "rating": 3.4,
+        "votes": 179,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Kwality Wall's Swirl's",
+        "rating": 3.0,
+        "votes": 5,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Singz",
+        "rating": 2.9,
+        "votes": 57,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hoot",
+        "rating": 3.9,
+        "votes": 405,
+        "price_range": 3,
+        "city": "Bangalore"
+      },
+      {
+        "name": "Madras Cafe",
+        "rating": 3.3,
+        "votes": 33,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Devotay",
+        "rating": 4.0,
+        "votes": 380,
+        "price_range": 3,
+        "city": "Cedar Rapids/Iowa City"
+      },
+      {
+        "name": "Chennai Hot Cafe",
+        "rating": 3.4,
+        "votes": 75,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "TFK - The Flaming Kick",
+        "rating": 3.5,
+        "votes": 214,
+        "price_range": 4,
+        "city": "Noida"
+      },
+      {
+        "name": "Chakhlo Food Court",
+        "rating": 2.6,
+        "votes": 45,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hwealthcafe",
+        "rating": 4.1,
+        "votes": 223,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Farzi Cafe",
+        "rating": 4.4,
+        "votes": 754,
+        "price_range": 3,
+        "city": "Bangalore"
+      },
+      {
+        "name": "Chin Chin",
+        "rating": 3.5,
+        "votes": 429,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Cafe Coffee Day",
+        "rating": 3.2,
+        "votes": 23,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Prince Fried N Grilled Chicken",
+        "rating": 2.7,
+        "votes": 18,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Punjabi Mirch",
+        "rating": 3.0,
+        "votes": 4,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Kumar Pav Bhaji Corner",
+        "rating": 3.2,
+        "votes": 12,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "34, Chowringhee Lane",
+        "rating": 3.2,
+        "votes": 15,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Texas Roadhouse",
+        "rating": 3.6,
+        "votes": 93,
+        "price_range": 2,
+        "city": "Waterloo"
+      },
+      {
+        "name": "GoGourmet",
+        "rating": 3.7,
+        "votes": 33,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Moti Mahal Delux",
+        "rating": 3.3,
+        "votes": 58,
+        "price_range": 3,
+        "city": "Allahabad"
+      },
+      {
+        "name": "Pizza Hut",
+        "rating": 3.3,
+        "votes": 113,
+        "price_range": 3,
+        "city": "Noida"
+      },
+      {
+        "name": "Nirula's",
+        "rating": 2.5,
+        "votes": 98,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "iGNiTE",
+        "rating": 3.0,
+        "votes": 110,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Urban Garden Cafe",
+        "rating": 3.1,
+        "votes": 20,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Havmor Ice Cream",
+        "rating": 2.8,
+        "votes": 7,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Priya Panchvati",
+        "rating": 2.9,
+        "votes": 10,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Cafe-18",
+        "rating": 2.5,
+        "votes": 103,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Hari Om Bhojnalaya",
+        "rating": 3.2,
+        "votes": 21,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Arora Snacks",
+        "rating": 2.8,
+        "votes": 14,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bravo Diet Food and Nutrition",
+        "rating": 3.0,
+        "votes": 7,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Ada \"e\" Haandi's",
+        "rating": 2.4,
+        "votes": 30,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pebble Street",
+        "rating": 3.9,
+        "votes": 886,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Village Caf\u00ed\u00a9",
+        "rating": 3.7,
+        "votes": 185,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Yellow Chilli",
+        "rating": 3.9,
+        "votes": 243,
+        "price_range": 3,
+        "city": "Vadodara"
+      },
+      {
+        "name": "Nut Khut Rasoi",
+        "rating": 3.4,
+        "votes": 30,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "BTW",
+        "rating": 3.2,
+        "votes": 19,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Bistro 57",
+        "rating": 4.0,
+        "votes": 20,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Rolling Pin Bakery",
+        "rating": 3.1,
+        "votes": 10,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Pindi's Kitchen",
+        "rating": 3.3,
+        "votes": 11,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Breakfast@60",
+        "rating": 3.1,
+        "votes": 6,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Days of the Raj",
+        "rating": 3.4,
+        "votes": 45,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "New Sukh Sagar",
+        "rating": 3.2,
+        "votes": 16,
+        "price_range": 1,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Side Wok",
+        "rating": 3.9,
+        "votes": 372,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Dawat Khana",
+        "rating": 2.5,
+        "votes": 82,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Paankhuri Restaurant",
+        "rating": 3.0,
+        "votes": 5,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Kebab Xpress",
+        "rating": 3.5,
+        "votes": 321,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hawalat Lounge & Bar",
+        "rating": 4.0,
+        "votes": 126,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Thai House by Kylin",
+        "rating": 3.8,
+        "votes": 54,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "SGF - Spice Grill Flame",
+        "rating": 3.1,
+        "votes": 8,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Swag Sadda Desi",
+        "rating": 3.1,
+        "votes": 8,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "SALT",
+        "rating": 4.3,
+        "votes": 1351,
+        "price_range": 3,
+        "city": "Dubai"
+      },
+      {
+        "name": "Chaayos",
+        "rating": 3.6,
+        "votes": 106,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Craft",
+        "rating": 4.1,
+        "votes": 1207,
+        "price_range": 4,
+        "city": "Johannesburg"
+      },
+      {
+        "name": "Mamu's Infusion",
+        "rating": 4.0,
+        "votes": 582,
+        "price_range": 3,
+        "city": "Jaipur"
+      },
+      {
+        "name": "Chicken Inn",
+        "rating": 3.6,
+        "votes": 447,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Cafe Cornucopia",
+        "rating": 3.6,
+        "votes": 140,
+        "price_range": 2,
+        "city": "Mysore"
+      },
+      {
+        "name": "Bats On Delivery",
+        "rating": 3.1,
+        "votes": 17,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Reena Restaurant",
+        "rating": 3.5,
+        "votes": 57,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Fortune Deli - Fortune Select Excalibur",
+        "rating": 3.6,
+        "votes": 42,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Spice Caves",
+        "rating": 4.2,
+        "votes": 691,
+        "price_range": 3,
+        "city": "Lucknow"
+      },
+      {
+        "name": "Mourya Sweets Chat Bhandar",
+        "rating": 2.9,
+        "votes": 4,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pahariya Chicken Corner",
+        "rating": 3.1,
+        "votes": 7,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Khan Chicken Biryani",
+        "rating": 2.9,
+        "votes": 9,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pirates of Grill",
+        "rating": 3.9,
+        "votes": 749,
+        "price_range": 3,
+        "city": "Noida"
+      },
+      {
+        "name": "Ashoka Restaurant",
+        "rating": 4.2,
+        "votes": 275,
+        "price_range": 3,
+        "city": "Nagpur"
+      },
+      {
+        "name": "Pesqueiro Eco Gourmet",
+        "rating": 4.0,
+        "votes": 7,
+        "price_range": 4,
+        "city": "Rio de Janeiro"
+      },
+      {
+        "name": "Fisherman's Cove",
+        "rating": 3.8,
+        "votes": 601,
+        "price_range": 3,
+        "city": "Goa"
+      },
+      {
+        "name": "Officer's Kitchen",
+        "rating": 3.3,
+        "votes": 27,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Burger Point",
+        "rating": 3.6,
+        "votes": 164,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Raahgiri",
+        "rating": 3.2,
+        "votes": 10,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Janki Vaishno Dhaba",
+        "rating": 3.0,
+        "votes": 4,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Mark's City Grille",
+        "rating": 4.5,
+        "votes": 345,
+        "price_range": 2,
+        "city": "Columbus"
+      },
+      {
+        "name": "New Hyderabadi Biryani House",
+        "rating": 2.5,
+        "votes": 25,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Spices & Sauces",
+        "rating": 3.0,
+        "votes": 8,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Latitude 28",
+        "rating": 3.8,
+        "votes": 203,
+        "price_range": 4,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Backyard Underground",
+        "rating": 3.5,
+        "votes": 134,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Cilantro Woodapple",
+        "rating": 3.0,
+        "votes": 8,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Big Chill",
+        "rating": 4.4,
+        "votes": 1521,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Hong Kong Cafe",
+        "rating": 3.6,
+        "votes": 88,
+        "price_range": 2,
+        "city": "Albany"
+      },
+      {
+        "name": "Haldiram's",
+        "rating": 3.6,
+        "votes": 185,
+        "price_range": 2,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "Chai Break",
+        "rating": 4.3,
+        "votes": 69,
+        "price_range": 2,
+        "city": "Bhubaneshwar"
+      },
+      {
+        "name": "Mandarin Chinese Restaurant",
+        "rating": 4.5,
+        "votes": 302,
+        "price_range": 2,
+        "city": "Macon"
+      },
+      {
+        "name": "Kwality Bengali Sweets",
+        "rating": 2.9,
+        "votes": 10,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Khana Khajana Da Dhaba",
+        "rating": 2.9,
+        "votes": 5,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Hahn's Kitchen",
+        "rating": 3.2,
+        "votes": 12,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "The Chaiwalas",
+        "rating": 2.9,
+        "votes": 9,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "60 ML - Country Inn & Suites by Carlson",
+        "rating": 3.0,
+        "votes": 7,
+        "price_range": 3,
+        "city": "Gurgaon"
+      },
+      {
+        "name": "QRO Gourmeteriia BY DARK HOUSE KAFE",
+        "rating": 4.2,
+        "votes": 349,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Super Snacks",
+        "rating": 3.1,
+        "votes": 44,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Swagath",
+        "rating": 3.6,
+        "votes": 415,
+        "price_range": 3,
+        "city": "Noida"
+      },
+      {
+        "name": "Rooftop",
+        "rating": 3.3,
+        "votes": 24,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Spice Wok",
+        "rating": 3.1,
+        "votes": 18,
+        "price_range": 2,
+        "city": "Faridabad"
+      },
+      {
+        "name": "Duggal's Rasoi",
+        "rating": 3.4,
+        "votes": 35,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Penta Cafe",
+        "rating": 3.6,
+        "votes": 24,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Pizza Hut Delivery",
+        "rating": 3.9,
+        "votes": 189,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Max Grille and Kitchen",
+        "rating": 3.5,
+        "votes": 99,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Nathu's Sweets",
+        "rating": 2.5,
+        "votes": 211,
+        "price_range": 2,
+        "city": "Noida"
+      },
+      {
+        "name": "Bandstand",
+        "rating": 3.3,
+        "votes": 339,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Tastee Chauka",
+        "rating": 3.7,
+        "votes": 31,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "The Pint Room",
+        "rating": 3.7,
+        "votes": 76,
+        "price_range": 3,
+        "city": "New Delhi"
+      },
+      {
+        "name": "The Refinery Singapore",
+        "rating": 3.2,
+        "votes": 30,
+        "price_range": 4,
+        "city": "Singapore"
+      },
+      {
+        "name": "Aggarwal Sweet & Bakers",
+        "rating": 2.9,
+        "votes": 5,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Green Chick Chop",
+        "rating": 3.5,
+        "votes": 52,
+        "price_range": 1,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Balluchi's - The Royal Cuisine",
+        "rating": 3.0,
+        "votes": 4,
+        "price_range": 2,
+        "city": "New Delhi"
+      },
+      {
+        "name": "Kolkata Roll Point",
+        "rating": 2.8,
+        "votes": 9,
+        "price_range": 1,
+        "city": "Noida"
+      },
+      {
+        "name": "Nirula's",
+        "rating": 2.5,
+        "votes": 221,
+        "price_range": 3,
+        "city": "Noida"
+      }
+    ],
+    "top_voted": [
+      {
+        "id": 51705,
+        "name": "Toit",
+        "city": "Bangalore",
+        "country": "India",
+        "rating": 4.8,
+        "rating_text": "Excellent",
+        "votes": 10934,
+        "price_range": 4,
+        "cuisines": "Italian, American, Pizza",
+        "cost": 2000,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 51040,
+        "name": "Truffles",
+        "city": "Bangalore",
+        "country": "India",
+        "rating": 4.7,
+        "rating_text": "Excellent",
+        "votes": 9667,
+        "price_range": 2,
+        "cuisines": "American, Burger, Cafe",
+        "cost": 800,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "Yes",
+        "booking": "No"
+      },
+      {
+        "id": 308322,
+        "name": "Hauz Khas Social",
+        "city": "New Delhi",
+        "country": "India",
+        "rating": 4.3,
+        "rating_text": "Very Good",
+        "votes": 7931,
+        "price_range": 3,
+        "cuisines": "Continental, American, Asian, North Indian",
+        "cost": 1600,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "Yes",
+        "booking": "Yes"
+      },
+      {
+        "id": 20404,
+        "name": "Peter Cat",
+        "city": "Kolkata",
+        "country": "India",
+        "rating": 4.3,
+        "rating_text": "Very Good",
+        "votes": 7574,
+        "price_range": 3,
+        "cuisines": "Continental, North Indian",
+        "cost": 1000,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "Yes",
+        "booking": "No"
+      },
+      {
+        "id": 56618,
+        "name": "AB's - Absolute Barbecues",
+        "city": "Bangalore",
+        "country": "India",
+        "rating": 4.6,
+        "rating_text": "Excellent",
+        "votes": 6907,
+        "price_range": 3,
+        "cuisines": "European, Mediterranean, North Indian",
+        "cost": 1400,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 20842,
+        "name": "Barbeque Nation",
+        "city": "Kolkata",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 5966,
+        "price_range": 3,
+        "cuisines": "North Indian, Chinese",
+        "cost": 1600,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 58882,
+        "name": "Big Brewsky",
+        "city": "Bangalore",
+        "country": "India",
+        "rating": 4.5,
+        "rating_text": "Excellent",
+        "votes": 5705,
+        "price_range": 3,
+        "cuisines": "Finger Food, North Indian, Italian, Continental, Thai, South Indian",
+        "cost": 1800,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "Yes",
+        "booking": "Yes"
+      },
+      {
+        "id": 94286,
+        "name": "AB's - Absolute Barbecues",
+        "city": "Hyderabad",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 5434,
+        "price_range": 3,
+        "cuisines": "European, Mediterranean, North Indian",
+        "cost": 1500,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 54162,
+        "name": "The Black Pearl",
+        "city": "Bangalore",
+        "country": "India",
+        "rating": 4.1,
+        "rating_text": "Very Good",
+        "votes": 5385,
+        "price_range": 3,
+        "cuisines": "North Indian, European, Mediterranean",
+        "cost": 1400,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "Yes"
+      },
+      {
+        "id": 20870,
+        "name": "BarBQ",
+        "city": "Kolkata",
+        "country": "India",
+        "rating": 4.2,
+        "rating_text": "Very Good",
+        "votes": 5288,
+        "price_range": 2,
+        "cuisines": "Chinese, North Indian",
+        "cost": 900,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "Yes",
+        "booking": "No"
+      },
+      {
+        "id": 900,
+        "name": "Saravana Bhavan",
+        "city": "New Delhi",
+        "country": "India",
+        "rating": 4.3,
+        "rating_text": "Very Good",
+        "votes": 5172,
+        "price_range": 2,
+        "cuisines": "South Indian",
+        "cost": 500,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "Yes",
+        "booking": "No"
+      },
+      {
+        "id": 35217,
+        "name": "Joey's Pizza",
+        "city": "Mumbai",
+        "country": "India",
+        "rating": 4.0,
+        "rating_text": "Very Good",
+        "votes": 5145,
+        "price_range": 2,
+        "cuisines": "Pizza",
+        "cost": 800,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 1614,
+        "name": "Big Chill",
+        "city": "New Delhi",
+        "country": "India",
+        "rating": 4.5,
+        "rating_text": "Excellent",
+        "votes": 4986,
+        "price_range": 3,
+        "cuisines": "Italian, Continental, European, Cafe",
+        "cost": 1500,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 301605,
+        "name": "Warehouse Cafe",
+        "city": "New Delhi",
+        "country": "India",
+        "rating": 3.7,
+        "rating_text": "Good",
+        "votes": 4914,
+        "price_range": 3,
+        "cuisines": "American, Continental, Italian, North Indian, Asian",
+        "cost": 1500,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 463,
+        "name": "Karim's",
+        "city": "New Delhi",
+        "country": "India",
+        "rating": 4.0,
+        "rating_text": "Very Good",
+        "votes": 4689,
+        "price_range": 2,
+        "cuisines": "Mughlai, North Indian",
+        "cost": 800,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      }
+    ],
+    "top_rated": [
+      {
+        "id": 20842,
+        "name": "Barbeque Nation",
+        "city": "Kolkata",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 5966,
+        "price_range": 3,
+        "cuisines": "North Indian, Chinese",
+        "cost": 1600,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 94286,
+        "name": "AB's - Absolute Barbecues",
+        "city": "Hyderabad",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 5434,
+        "price_range": 3,
+        "cuisines": "European, Mediterranean, North Indian",
+        "cost": 1500,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 17806994,
+        "name": "Mirchi And Mime",
+        "city": "Mumbai",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 3244,
+        "price_range": 3,
+        "cuisines": "North Indian, South Indian, Mughlai",
+        "cost": 1500,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 310143,
+        "name": "Naturals Ice Cream",
+        "city": "New Delhi",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 2620,
+        "price_range": 1,
+        "cuisines": "Ice Cream",
+        "cost": 150,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "Yes",
+        "booking": "No"
+      },
+      {
+        "id": 17580142,
+        "name": "McGuire's Irish Pub & Brewery",
+        "city": "Pensacola",
+        "country": "United States",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 2238,
+        "price_range": 3,
+        "cuisines": "Burger, Bar Food, Steak",
+        "cost": 40,
+        "currency": "Dollar($)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 7417450,
+        "name": "Talaga Sampireun",
+        "city": "Tangerang",
+        "country": "Indonesia",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 2212,
+        "price_range": 3,
+        "cuisines": "Sunda, Indonesian",
+        "cost": 200000,
+        "currency": "Indonesian Rupiah(IDR)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 2004,
+        "name": "Indian Accent - The Manor",
+        "city": "New Delhi",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1934,
+        "price_range": 4,
+        "cuisines": "Modern Indian",
+        "cost": 4000,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 25570,
+        "name": "Barbeque Nation",
+        "city": "Kolkata",
+        "country": "India",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1753,
+        "price_range": 3,
+        "cuisines": "North Indian, Chinese",
+        "cost": 1600,
+        "currency": "Indian Rupees(Rs.)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 7422633,
+        "name": "Talaga Sampireun",
+        "city": "Jakarta",
+        "country": "Indonesia",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1662,
+        "price_range": 3,
+        "cuisines": "Sunda, Indonesian",
+        "cost": 200000,
+        "currency": "Indonesian Rupiah(IDR)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 7417455,
+        "name": "Talaga Sampireun",
+        "city": "Jakarta",
+        "country": "Indonesia",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1640,
+        "price_range": 3,
+        "cuisines": "Sunda, Indonesian",
+        "cost": 200000,
+        "currency": "Indonesian Rupiah(IDR)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 17061296,
+        "name": "Pom Pom's Teahouse and Sandwicheria",
+        "city": "Orlando",
+        "country": "United States",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1457,
+        "price_range": 2,
+        "cuisines": "American, Sandwich, Tea",
+        "cost": 25,
+        "currency": "Dollar($)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 17095098,
+        "name": "Mazzaro's Italian Market",
+        "city": "Tampa Bay",
+        "country": "United States",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1424,
+        "price_range": 1,
+        "cuisines": "Italian, Deli",
+        "cost": 10,
+        "currency": "Dollar($)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 17095236,
+        "name": "Mr. Dunderbak's Biergarten and Marketplatz",
+        "city": "Tampa Bay",
+        "country": "United States",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1413,
+        "price_range": 3,
+        "cuisines": "European, German",
+        "cost": 40,
+        "currency": "Dollar($)",
+        "delivery": "No",
+        "booking": "No"
+      },
+      {
+        "id": 208850,
+        "name": "Tresind - Nassima Royal Hotel",
+        "city": "Dubai",
+        "country": "UAE",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1352,
+        "price_range": 4,
+        "cuisines": "Indian",
+        "cost": 500,
+        "currency": "Emirati Diram(AED)",
+        "delivery": "No",
+        "booking": "Yes"
+      },
+      {
+        "id": 17142792,
+        "name": "Mama's Fish House",
+        "city": "Rest of Hawaii",
+        "country": "United States",
+        "rating": 4.9,
+        "rating_text": "Excellent",
+        "votes": 1343,
+        "price_range": 4,
+        "cuisines": "Hawaiian, Seafood",
+        "cost": 70,
+        "currency": "Dollar($)",
+        "delivery": "No",
+        "booking": "No"
+      }
+    ]
+  },
+  "price_delivery_trend": [
+    {
+      "price_range": "Range 1",
+      "price_num": 1,
+      "delivery_yes": 3.26,
+      "delivery_no": 3.23,
+      "overall": 3.24
+    },
+    {
+      "price_range": "Range 2",
+      "price_num": 2,
+      "delivery_yes": 3.33,
+      "delivery_no": 3.41,
+      "overall": 3.38
+    },
+    {
+      "price_range": "Range 3",
+      "price_num": 3,
+      "delivery_yes": 3.65,
+      "delivery_no": 3.83,
+      "overall": 3.78
+    },
+    {
+      "price_range": "Range 4",
+      "price_num": 4,
+      "delivery_yes": 3.93,
+      "delivery_no": 3.89,
+      "overall": 3.89
+    }
+  ],
+  "country_distribution": [
+    {
+      "country": "India",
+      "count": 8652,
+      "percentage": 90.59,
+      "avg_rating_rated": 3.35,
+      "currencies": [
+        "Indian Rupees(Rs.)"
+      ]
+    },
+    {
+      "country": "United States",
+      "count": 434,
+      "percentage": 4.54,
+      "avg_rating_rated": 4.03,
+      "currencies": [
+        "Dollar($)"
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "count": 80,
+      "percentage": 0.84,
+      "avg_rating_rated": 4.14,
+      "currencies": [
+        "Pounds(\u008c\u00a3)"
+      ]
+    },
+    {
+      "country": "Brazil",
+      "count": 60,
+      "percentage": 0.63,
+      "avg_rating_rated": 4.11,
+      "currencies": [
+        "Brazilian Real(R$)"
+      ]
+    },
+    {
+      "country": "UAE",
+      "count": 60,
+      "percentage": 0.63,
+      "avg_rating_rated": 4.23,
+      "currencies": [
+        "Emirati Diram(AED)"
+      ]
+    },
+    {
+      "country": "South Africa",
+      "count": 60,
+      "percentage": 0.63,
+      "avg_rating_rated": 4.21,
+      "currencies": [
+        "Rand(R)"
+      ]
+    },
+    {
+      "country": "New Zealand",
+      "count": 40,
+      "percentage": 0.42,
+      "avg_rating_rated": 4.26,
+      "currencies": [
+        "NewZealand($)"
+      ]
+    },
+    {
+      "country": "Turkey",
+      "count": 34,
+      "percentage": 0.36,
+      "avg_rating_rated": 4.3,
+      "currencies": [
+        "Turkish Lira(TL)"
+      ]
+    },
+    {
+      "country": "Australia",
+      "count": 24,
+      "percentage": 0.25,
+      "avg_rating_rated": 3.66,
+      "currencies": [
+        "Dollar($)"
+      ]
+    },
+    {
+      "country": "Philippines",
+      "count": 22,
+      "percentage": 0.23,
+      "avg_rating_rated": 4.47,
+      "currencies": [
+        "Botswana Pula(P)"
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "count": 21,
+      "percentage": 0.22,
+      "avg_rating_rated": 4.3,
+      "currencies": [
+        "Indonesian Rupiah(IDR)"
+      ]
+    },
+    {
+      "country": "Singapore",
+      "count": 20,
+      "percentage": 0.21,
+      "avg_rating_rated": 3.58,
+      "currencies": [
+        "Dollar($)"
+      ]
+    },
+    {
+      "country": "Qatar",
+      "count": 20,
+      "percentage": 0.21,
+      "avg_rating_rated": 4.06,
+      "currencies": [
+        "Qatari Rial(QR)"
+      ]
+    },
+    {
+      "country": "Sri Lanka",
+      "count": 20,
+      "percentage": 0.21,
+      "avg_rating_rated": 3.87,
+      "currencies": [
+        "Sri Lankan Rupee(LKR)"
+      ]
+    },
+    {
+      "country": "Canada",
+      "count": 4,
+      "percentage": 0.04,
+      "avg_rating_rated": 3.58,
+      "currencies": [
+        "Dollar($)"
+      ]
+    }
+  ],
+  "correlations": {
+    "all": {
+      "Aggregate rating": {
+        "Aggregate rating": 1.0,
+        "Votes": 0.314,
+        "Average Cost for two": 0.052,
+        "Price range": 0.438
+      },
+      "Votes": {
+        "Aggregate rating": 0.314,
+        "Votes": 1.0,
+        "Average Cost for two": 0.068,
+        "Price range": 0.309
+      },
+      "Average Cost for two": {
+        "Aggregate rating": 0.052,
+        "Votes": 0.068,
+        "Average Cost for two": 1.0,
+        "Price range": 0.075
+      },
+      "Price range": {
+        "Aggregate rating": 0.438,
+        "Votes": 0.309,
+        "Average Cost for two": 0.075,
+        "Price range": 1.0
+      }
+    },
+    "rated": {
+      "Aggregate rating": {
+        "Aggregate rating": 1.0,
+        "Votes": 0.409,
+        "Average Cost for two": 0.077,
+        "Price range": 0.403
+      },
+      "Votes": {
+        "Aggregate rating": 0.409,
+        "Votes": 1.0,
+        "Average Cost for two": 0.063,
+        "Price range": 0.274
+      },
+      "Average Cost for two": {
+        "Aggregate rating": 0.077,
+        "Votes": 0.063,
+        "Average Cost for two": 1.0,
+        "Price range": 0.071
+      },
+      "Price range": {
+        "Aggregate rating": 0.403,
+        "Votes": 0.274,
+        "Average Cost for two": 0.071,
+        "Price range": 1.0
+      }
+    }
+  },
+  "outliers": {
+    "q1": 5.0,
+    "q3": 131.0,
+    "iqr": 126.0,
+    "lower_limit": -184.0,
+    "upper_limit": 320.0,
+    "iqr_outliers": 1126,
+    "zscore_outliers": 173,
+    "takeaway": "Restaurants with 10,000+ votes are REAL famous brands and high costs are real fine-dining venues. They are valuable business signals, not data errors."
+  },
+  "insights": [
+    {
+      "id": 1,
+      "category": "Rating Distribution",
+      "icon": "AlertCircle",
+      "headline": "Fix the Ratings Gap: 22.5% of Restaurants Unrated",
+      "stat": "2,148 Restaurants (22.49%)",
+      "explanation": "Nearly a quarter of restaurants have an Aggregate Rating of 0 ('Not rated'). This creates massive visibility and trust blindspots for customers.",
+      "impact": "High Priority"
+    },
+    {
+      "id": 2,
+      "category": "Online Delivery",
+      "icon": "Bike",
+      "headline": "Promote Online Delivery: Significant Rating Advantage",
+      "stat": "25.7% Offering Delivery (3.25 vs 2.47 Avg Rating)",
+      "explanation": "Only 25.7% of restaurants offer online delivery. Those offering delivery have higher average ratings and 2.3x more customer engagement.",
+      "impact": "Growth Driver"
+    },
+    {
+      "id": 3,
+      "category": "Table Booking",
+      "icon": "CalendarCheck",
+      "headline": "Table Booking Is Severely Underused in Fine Dining",
+      "stat": "12.1% Adoption (3.44 vs 2.56 Avg Rating)",
+      "explanation": "Only 12.1% of restaurants enable table booking, yet they achieve a 3.44 average rating and attract 6.8x more votes (627 vs 92).",
+      "impact": "Revenue Opportunity"
+    },
+    {
+      "id": 4,
+      "category": "Price Range",
+      "icon": "DollarSign",
+      "headline": "Premium Restaurants Perform Better, But Quality Matters",
+      "stat": "3.89 Rating for Range 4 vs 3.24 for Range 1",
+      "explanation": "Price Range 4 achieves 3.89 average rating vs 3.24 for Range 1. However, raw cost correlation is weak (0.052), proving price alone does not guarantee satisfaction.",
+      "impact": "Value Insight"
+    },
+    {
+      "id": 5,
+      "category": "Customer Engagement",
+      "icon": "TrendingUp",
+      "headline": "Votes Are a Strong Signal of Platform Trust",
+      "stat": "r = 0.41 Correlation Between Votes & Rating",
+      "explanation": "The correlation of 0.41 between votes and ratings indicates that highly engaged restaurants have solidified reputations and repeat diners.",
+      "impact": "Engagement"
+    },
+    {
+      "id": 6,
+      "category": "Cuisine Performance",
+      "icon": "Utensils",
+      "headline": "Winning Cuisines vs Market Saturation",
+      "stat": "Italian (3.95) & American (3.92) vs North Indian (936 outlets)",
+      "explanation": "Italian and American cuisines lead customer ratings, while North Indian has the highest outlet density (936), signaling intense local market competition.",
+      "impact": "Market Strategy"
+    },
+    {
+      "id": 7,
+      "category": "Geographic Concentration",
+      "icon": "MapPin",
+      "headline": "Over 80% Restaurant Concentration in Delhi NCR",
+      "stat": "7,671 / 9,551 Outlets in New Delhi, Gurgaon & Noida",
+      "explanation": "Just 3 cities account for over 80% of all restaurants. Zomato faces geographic concentration risk and has vast expansion runway in Tier-2 Indian cities.",
+      "impact": "Strategic Risk"
+    },
+    {
+      "id": 8,
+      "category": "Data Quality",
+      "icon": "ShieldCheck",
+      "headline": "Multi-Country Currency & Clean Data Quality",
+      "stat": "15 Countries, 9 Missing Values, 0 Duplicates",
+      "explanation": "The dataset spans 15 countries with multiple local currencies. Filtering by Indian Rupees (Rs.) isolates the domestic core for like-for-like analysis.",
+      "impact": "Governance"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": 1,
+      "title": "Closing the 22.5% Ratings Gap via Customer Incentives",
+      "observation": "Over 2,148 restaurants (22.5%) have an aggregate rating of 0 ('Not rated').",
+      "evidence": "22.49% unrated rate, skewing aggregate rating distribution with skewness of -0.954.",
+      "business_meaning": "Unrated restaurants lose customer conversions because diners hesitate to order without social proof. It undermines platform trust.",
+      "action": "Deploy gamified review prompts, push notifications post-delivery, and review rewards (Zomato Pro points / discounts) to turn unrated restaurants into reviewed listings within 14 days of joining."
+    },
+    {
+      "id": 2,
+      "title": "Onboarding High-Performing Dine-In Restaurants to Online Delivery",
+      "observation": "Only 25.7% of listed restaurants have online delivery enabled.",
+      "evidence": "Delivery-enabled restaurants average 3.25 rating across all venues (3.38 rated) and gather 272 average votes vs 117 for non-delivery.",
+      "business_meaning": "Restaurants with delivery exhibit substantially higher customer engagement and satisfaction. Non-delivery restaurants leave high-margin delivery revenue on the table.",
+      "action": "Create a dedicated merchant onboarding program targeting the 74.3% non-delivery restaurants, starting with high-rating Dine-in establishments in New Delhi and Gurgaon."
+    },
+    {
+      "id": 3,
+      "title": "Expanding Table Booking Monetization in Premium Outlets",
+      "observation": "Table booking adoption is critically low at only 12.1% of all listings.",
+      "evidence": "Table booking venues maintain a 3.44 overall average rating (3.59 rated) and command 627 average votes vs 92 for non-booking restaurants.",
+      "business_meaning": "Fine-dining and casual-dining customers place immense value on reservation convenience, driving loyalty and higher average ticket sizes.",
+      "action": "Bundle table booking capabilities into premium merchant tier packages, especially for Price Range 3 and 4 establishments in urban hubs."
+    },
+    {
+      "id": 4,
+      "title": "Geographic Diversification Beyond Delhi NCR into Tier-2 Hubs",
+      "observation": "Over 80% of listings are concentrated across New Delhi (5,473), Gurgaon (1,118), and Noida (1,080).",
+      "evidence": "7,671 out of 9,551 total restaurants are in the NCR corridor, while major cities like Kolkata, Bangalore, and Pune have fewer than 25 listings in this dataset.",
+      "business_meaning": "Zomato carries severe regional concentration exposure, while high-growth emerging tech and culinary capitals represent untapped platform market share.",
+      "action": "Allocate merchant acquisition teams to tier-1 and tier-2 growth cities (Bangalore, Hyderabad, Pune, Chandigarh) where cuisine diversification and digital dining adoption are accelerating."
+    }
+  ],
+  "eda_workflow": [
+    {
+      "phase": 1,
+      "task": "Understood EDA objectives",
+      "finding": "Defined key business questions and analytical framework for restaurant performance."
+    },
+    {
+      "phase": 2,
+      "task": "Setting Up & Loading Dataset",
+      "finding": "9,551 rows \u00d7 21 columns, multi-country international dataset with mixed data types."
+    },
+    {
+      "phase": 3,
+      "task": "Data Quality Assessment",
+      "finding": "9 missing values in Cuisines column (imputed as 'Unknown'), 0 duplicate rows."
+    },
+    {
+      "phase": 4,
+      "task": "Univariate Analysis",
+      "finding": "22.5% restaurants are 'Not Rated', 46.5% belong to Price Range 1, skewness is -0.954."
+    },
+    {
+      "phase": 5,
+      "task": "Bivariate Analysis",
+      "finding": "Positive correlation between price range & rating; Online delivery restaurants have higher ratings."
+    },
+    {
+      "phase": 6,
+      "task": "Multivariate Analysis",
+      "finding": "New Delhi dominates across all metrics; delivery rating advantage persists across top cities."
+    },
+    {
+      "phase": 7,
+      "task": "Outlier & Missing Value Analysis",
+      "finding": "1,126 IQR outliers in votes; identified as genuine brand popularity rather than data errors."
+    },
+    {
+      "phase": 8,
+      "task": "Feature Relationships & Patterns",
+      "finding": "Votes vs rating r = 0.41; Italian & American cuisines lead ratings; North Indian leads volume."
+    },
+    {
+      "phase": 9,
+      "task": "Drawing Insights & Business Conclusions",
+      "finding": "Formulated 8 evidence-backed business insights and 4 actionable recommendations."
+    },
+    {
+      "phase": 10,
+      "task": "Complete End-to-End EDA Summary",
+      "finding": "Engineered clean dataset features (binary flags, Is Rated) ready for production analytics."
+    }
+  ],
+  "city_map_locations": [
+    {
+      "city": "New Delhi",
+      "lat": 28.6165,
+      "lng": 77.19,
+      "count": 5240,
+      "avg_rating": 3.3
+    },
+    {
+      "city": "Gurgaon",
+      "lat": 28.4669,
+      "lng": 77.0715,
+      "count": 1070,
+      "avg_rating": 3.33
+    },
+    {
+      "city": "Noida",
+      "lat": 28.5674,
+      "lng": 77.3603,
+      "count": 986,
+      "avg_rating": 3.16
+    },
+    {
+      "city": "Faridabad",
+      "lat": 28.4333,
+      "lng": 77.3117,
+      "count": 229,
+      "avg_rating": 3.1
+    },
+    {
+      "city": "Ghaziabad",
+      "lat": 28.6375,
+      "lng": 77.3625,
+      "count": 25,
+      "avg_rating": 3.1
+    },
+    {
+      "city": "Ahmedabad",
+      "lat": 23.0369,
+      "lng": 72.5313,
+      "count": 21,
+      "avg_rating": 4.16
+    },
+    {
+      "city": "Orlando",
+      "lat": 28.5248,
+      "lng": -81.4163,
+      "count": 20,
+      "avg_rating": 4.48
+    },
+    {
+      "city": "Pretoria",
+      "lat": -25.7794,
+      "lng": 28.2579,
+      "count": 20,
+      "avg_rating": 4.19
+    },
+    {
+      "city": "Dalton",
+      "lat": 34.7759,
+      "lng": -85.0569,
+      "count": 20,
+      "avg_rating": 4.11
+    },
+    {
+      "city": "Davenport",
+      "lat": 41.561,
+      "lng": -90.5431,
+      "count": 20,
+      "avg_rating": 4.13
+    },
+    {
+      "city": "Pocatello",
+      "lat": 42.8674,
+      "lng": -112.3979,
+      "count": 20,
+      "avg_rating": 3.67
+    },
+    {
+      "city": "Des Moines",
+      "lat": 41.6399,
+      "lng": -93.6628,
+      "count": 20,
+      "avg_rating": 4.24
+    },
+    {
+      "city": "Pensacola",
+      "lat": 30.3952,
+      "lng": -87.1981,
+      "count": 20,
+      "avg_rating": 4.2
+    },
+    {
+      "city": "Doha",
+      "lat": 25.2862,
+      "lng": 51.5129,
+      "count": 20,
+      "avg_rating": 4.06
+    },
+    {
+      "city": "Dubai",
+      "lat": 25.198,
+      "lng": 55.2743,
+      "count": 20,
+      "avg_rating": 4.37
+    },
+    {
+      "city": "Dubuque",
+      "lat": 42.501,
+      "lng": -90.6781,
+      "count": 20,
+      "avg_rating": 3.54
+    },
+    {
+      "city": "Abu Dhabi",
+      "lat": 24.4643,
+      "lng": 54.406,
+      "count": 20,
+      "avg_rating": 4.3
+    },
+    {
+      "city": "Edinburgh",
+      "lat": 55.9535,
+      "lng": -3.192,
+      "count": 20,
+      "avg_rating": 4.09
+    },
+    {
+      "city": "Puducherry",
+      "lat": 11.937,
+      "lng": 79.8329,
+      "count": 20,
+      "avg_rating": 3.73
+    },
+    {
+      "city": "Gainesville",
+      "lat": 34.4226,
+      "lng": -83.8517,
+      "count": 20,
+      "avg_rating": 4.04
+    },
+    {
+      "city": "Mumbai",
+      "lat": 19.1144,
+      "lng": 72.8485,
+      "count": 20,
+      "avg_rating": 4.08
+    },
+    {
+      "city": "Manchester",
+      "lat": 53.4782,
+      "lng": -2.239,
+      "count": 20,
+      "avg_rating": 4.04
+    },
+    {
+      "city": "Macon",
+      "lat": 32.7306,
+      "lng": -83.6609,
+      "count": 20,
+      "avg_rating": 4.12
+    },
+    {
+      "city": "London",
+      "lat": 51.512,
+      "lng": -0.1311,
+      "count": 20,
+      "avg_rating": 4.53
+    },
+    {
+      "city": "Indore",
+      "lat": 22.7368,
+      "lng": 75.8882,
+      "count": 20,
+      "avg_rating": 3.97
+    },
+    {
+      "city": "Kolkata",
+      "lat": 22.5412,
+      "lng": 88.3725,
+      "count": 20,
+      "avg_rating": 4.25
+    },
+    {
+      "city": "Kochi",
+      "lat": 9.9929,
+      "lng": 76.3012,
+      "count": 20,
+      "avg_rating": 4.08
+    },
+    {
+      "city": "Columbus",
+      "lat": 32.5194,
+      "lng": -84.9664,
+      "count": 20,
+      "avg_rating": 4.03
+    },
+    {
+      "city": "Coimbatore",
+      "lat": 11.0099,
+      "lng": 76.9782,
+      "count": 20,
+      "avg_rating": 4.13
+    },
+    {
+      "city": "Bangalore",
+      "lat": 12.955,
+      "lng": 77.6344,
+      "count": 20,
+      "avg_rating": 4.38
+    },
+    {
+      "city": "Singapore",
+      "lat": 1.2939,
+      "lng": 103.8487,
+      "count": 20,
+      "avg_rating": 3.58
+    },
+    {
+      "city": "Albany",
+      "lat": 31.603,
+      "lng": -84.1866,
+      "count": 20,
+      "avg_rating": 3.56
+    },
+    {
+      "city": "Wellington City",
+      "lat": -41.2938,
+      "lng": 174.7781,
+      "count": 20,
+      "avg_rating": 4.25
+    },
+    {
+      "city": "Waterloo",
+      "lat": 42.511,
+      "lng": -92.4085,
+      "count": 20,
+      "avg_rating": 3.65
+    },
+    {
+      "city": "Ankara",
+      "lat": 39.9064,
+      "lng": 32.8243,
+      "count": 20,
+      "avg_rating": 4.31
+    },
+    {
+      "city": "Valdosta",
+      "lat": 30.8482,
+      "lng": -83.3016,
+      "count": 20,
+      "avg_rating": 3.71
+    },
+    {
+      "city": "Athens",
+      "lat": 33.9538,
+      "lng": -83.3805,
+      "count": 20,
+      "avg_rating": 4.2
+    },
+    {
+      "city": "Augusta",
+      "lat": 33.4892,
+      "lng": -82.0532,
+      "count": 20,
+      "avg_rating": 4.13
+    },
+    {
+      "city": "Tampa Bay",
+      "lat": 27.8983,
+      "lng": -82.5683,
+      "count": 20,
+      "avg_rating": 4.41
+    },
+    {
+      "city": "S\u00ed\u00a3o Paulo",
+      "lat": -23.5702,
+      "lng": -46.662,
+      "count": 20,
+      "avg_rating": 4.15
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Restaurant Analysis | Analytics & Business Intelligence Dashboard</title>
+  <meta name="description" content="An exploratory data analysis project focused on restaurant ratings, pricing, cuisines, locations, delivery services, customer engagement, and business insights.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23E23744'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='white' font-family='sans-serif' text-anchor='middle'>Z</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            zomato: {
+              DEFAULT: '#E23744',
+              hover: '#CB202D',
+              light: '#FFF1F2',
+              dark: '#B91C1C'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Leaflet CSS & JS for Authentic Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Custom CSS Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#F4F5F8] text-[#1C1C1C] min-h-screen antialiased selection:bg-red-500 selection:text-white">
+
+  <!-- Root Application Container -->
+  <div id="app" class="min-h-screen">
+    <!-- Initial Loading Skeleton -->
+    <div class="min-h-screen flex items-center justify-center p-6">
+      <div class="text-center space-y-4">
+        <div class="w-14 h-14 bg-[#E23744] text-white rounded-2xl flex items-center justify-center mx-auto shadow-xl animate-pulse">
+          <span class="text-3xl font-black">Z</span>
+        </div>
+        <h2 class="text-lg font-bold text-slate-800">Loading Zomato Restaurant Analytics...</h2>
+        <p class="text-xs text-slate-500">Processing 9,551 records from zomato.csv</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Modules -->
+  <script src="js/dataEngine.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/components/sidebar.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/kpiCards.js"></script>
+  <script src="js/components/overviewPage.js"></script>
+  <script src="js/components/restaurantsPage.js"></script>
+  <script src="js/components/ratingsPage.js"></script>
+  <script src="js/components/locationsPage.js"></script>
+  <script src="js/components/insightsPage.js"></script>
+  <script src="js/components/dataQualityPage.js"></script>
+  <script src="js/components/reportPage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
